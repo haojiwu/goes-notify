@@ -78,7 +78,7 @@ def notify_send_email(dates, current_apt, settings, use_gmail=False):
         log(e)
 
 def notify_osx(msg):
-    commands.getstatusoutput("osascript -e 'display notification \"%s\" with title \"Global Entry Notifier\"'" % msg)
+    commands.getstatusoutput("osascript -e 'display notification \"%s\" with title \"Global Entry Notifier\" sound name \"Glass.aiff\"'" % msg)
 
 def notify_sms(settings, dates):
     for avail_apt in dates: 
